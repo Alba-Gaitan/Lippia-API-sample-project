@@ -6,6 +6,52 @@ import java.util.List;
 
 public class ProjectResponse {
     private String id;
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    private String timestamp;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getClientName() {
+        return clientName;
+    }
+
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
+    }
+
+    private int status;
+    private String error;
+    private String path;
     private String name;
     private HourlyRate hourlyRate;
     private String clientId;
@@ -13,6 +59,7 @@ public class ProjectResponse {
     private String workspaceId;
     private boolean billable;
     private List<Membership> memberships;
+    private String clientName;
     private String color;
     private Estimate EstimateObject;
     private boolean archived;

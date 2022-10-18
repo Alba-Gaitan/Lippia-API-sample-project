@@ -12,9 +12,14 @@ import java.util.Map;
 
 public class ErrorService extends BaseService {
 
-    public static Response get(String jsonName) {
+   /* public static Response get(String jsonName) {
         return get(jsonName, ErrorResponse.class,setParams());
+    }*/
+
+    public static Response get(String jsonName) {
+        return get(jsonName, ErrorResponse.class);
     }
+
 
     private static Map<String, String> setParams() {
         Map<String, String> params = new HashMap<String, String>();
