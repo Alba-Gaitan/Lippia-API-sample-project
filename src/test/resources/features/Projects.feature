@@ -1,5 +1,6 @@
+@Smoke
 Feature: Projects
-  #test ok
+
   Scenario Outline: Consulta de todos los proyectos exitosamente
     Given Mi cuenta creada en clockify y mi X-Api-Key geneada
     And un id_WSpace
@@ -10,7 +11,7 @@ Feature: Projects
     | operation | entity | jsonName    | status |
     | GET       | PROJECTS| projects/rq | 200    |
 
-  #test ok
+
   Scenario Outline: Consulta de un proyecto exitosamente por su identificador
     Given Mi cuenta creada en clockify y mi X-Api-Key geneada
     And un id_WSpace
@@ -25,7 +26,7 @@ Feature: Projects
       | operation | entity | jsonName    | status  |
       | GET       | PROJECT| projectId/rq | 200    |
 
-    #test ok
+
   Scenario Outline: Proyecto no autorizado 401
     Given X-Api-Key invalido
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
@@ -45,7 +46,7 @@ Feature: Projects
       | operation | entity  | jsonName         | status |
       | GET       | PROJECTS   | projects/rq_404 | 404    |
 
-  @Success
+
   Scenario Outline: Editar un proyecto exitosamente
     Given Mi cuenta creada en clockify y mi X-Api-Key geneada
     And un id_WSpace

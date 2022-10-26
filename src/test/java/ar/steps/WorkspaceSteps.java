@@ -11,7 +11,7 @@ public class WorkspaceSteps extends PageSteps {
 
     @Given("Mi cuenta creada en clockify y mi X-Api-Key geneada")
     public void miCuentaCreadaEnClockifyYMiXApiKeyGeneada() {
-        BaseService.API_KEY.set("Nzk3ZGJlZDMtNTQxNC00MjlkLTgzYjktYTRjZGM4NTQ1MjIz");
+        BaseService.API_KEY.set("NTRmNTA0YzEtYjZmZC00NWQxLWE5MDItYTQ1Yjc4Njg1Yzc3");
     }
 
     @Then("Obtengo los datos de mi Workspace")
@@ -21,6 +21,6 @@ public class WorkspaceSteps extends PageSteps {
 
     @Given("X-Api-Key invalido")
     public void xApiKeyInvalido() {
-        BaseService.API_KEY.set("Nzk3ZGJlZDMtNTQxNC00MjlkLTgzYjktYTRjZGM4NTQ1MjI1");
+        BaseService.API_KEY.set("NTRmNTA0YzEtYjZmZC00NWQxLWE5MDItYTQ2Yjc4Njg1Yzc3");
     }
 }

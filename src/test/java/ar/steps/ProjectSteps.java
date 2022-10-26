@@ -22,7 +22,7 @@ public class ProjectSteps extends PageSteps {
 
     @And("un id_WSpace")
     public void unId_WSpace() {
-        ProjectsService.ID_W_SPACE.set("6298c9a52726177ddc32ac28");
+        ProjectsService.ID_W_SPACE.set("6354623028051215c2f00789");
     }
 
     @Given("un id project de la respuesta")
@@ -34,7 +34,7 @@ public class ProjectSteps extends PageSteps {
 
     @And("selecciono un proyecto por su id")
     public void seleccionoUnProyectoPorSuId() {
-        BaseService.ID_PROJECT.set("6298c9a52726177ddc32ac28");
+        BaseService.ID_PROJECT.set("6355e6823da4c53079e6a9a9");
     }
 
     @And("modifico el nombre del proyecto '(.*)'$")

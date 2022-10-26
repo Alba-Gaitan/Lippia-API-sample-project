@@ -21,7 +21,7 @@
         <cucumber.stepsDefinitions>--glue ar/steps</cucumber.stepsDefinitions>
 		<cucumber.hooks>--glue com/crowdar/bdd/cukes --glue ar/apiExampleProject/hook</cucumber.hooks>
         <!-- 	<cucumber.tags>@prueba</cucumber.tags>-->
-             <cucumber.tags>@Success</cucumber.tags>
+             <cucumber.tags>@Smoke</cucumber.tags>
 		<cucumber.reporters>--plugin pretty --plugin api.report.CucumberReporter:</cucumber.reporters>
 		<crowdar.cucumber.option>src/test/resources/features ${cucumber.hooks} ${cucumber.stepsDefinitions} --glue com/crowdar --tags 'not @Ignore' --tags ${cucumber.tags} ${cucumber.reporters}</crowdar.cucumber.option>
         <crowdar.projectType>API</crowdar.projectType>

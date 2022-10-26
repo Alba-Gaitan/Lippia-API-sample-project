@@ -13,7 +13,7 @@ import static services.BaseService.API_KEY;
 public class ProjectService extends BaseService {
 
   public static Response get(String jsonName) {
-      return get(jsonName, ProjectResponse[].class,setParams());
+      return get(jsonName, ProjectResponse.class,setParams());
      }
     public static Response put(String jsonName) {
         return put(jsonName, ProjectResponse.class,setParamsPut(setParams()));
